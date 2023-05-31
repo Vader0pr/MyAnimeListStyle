@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 :root {
   --main-color: #8000e1;
@@ -7,6 +7,10 @@
   --list-box-width: 1380px;
   --list-width: calc(var(--list-box-width) - 34px);
   --image-size-multiplier: 1.1;
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
 }
 
 .list-unit .list-status-title .stats a {
@@ -131,6 +135,7 @@
   margin-left: 16px;
   box-shadow: 0px 0px 20px 0px black;
 }
+
 .icon-menu .icon {
   margin-left: 2px;
   margin-top: 1px;
@@ -149,10 +154,6 @@
 }
 .list-table {
   background-color: #1c1c1c;
-}
-
-* {
-  font-family: 'Quicksand', sans-serif;
 }
 
 .list-unit .list-stats {
@@ -231,4 +232,45 @@ input, select, option, label {
   background-color: #2c2c2c;
   color: white;
   border-radius: 8px;
+}
+
+.dark-mode .mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-body {
+  border-radius: 16px !important;
+}
+
+.dark-mode .mal-modal .mal-modal-dialog .mal-modal-content {
+  border-radius: 16px !important;
+}
+
+.dark-mode .mal-modal .mal-modal-dialog {
+  border-radius: 16px !important;
+}
+
+.modal-vote-score-footer {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.dark-mode .mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-body .modal-vote-score-footer a {
+  color: var(--main-color);
+  border-radius: 12px !important;
+  background-color: #222222;
+  transition: all 0.3s, ease-in-out 0.3s;
+}
+.dark-mode .mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-body .modal-vote-score-footer a:hover {
+  background-color: #3c3c3c !important;
+  transition: all 0.3s, ease-in-out 0.3s;
+}
+
+.modal-vote-score-link {
+  border-radius: 12px !important;
+  transition: all 0.5s, ease-in-out 0.5s;
+}
+
+.dark-mode .mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-body .modal-vote-score li a:hover {
+  background-color: var(--main-color) !important;
+  box-shadow: 0px 0px 8px var(--main-color);
+  transition: all 0.5s, ease-in-out 0.5s;
+  background-color: var(--main-color) !important;
+  border: 5px solid var(--main-color) !important;
 }
